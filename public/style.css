@@ -1,0 +1,29 @@
+:root{
+    /* colous */
+--main--:white;
+--second--:rgb(143, 0, 0);
+--third--:grey;
+--bgimg--:url("bg2.jpg");
+--bg1--: black;
+--bg2--:white;
+
+/* fonts */
+--head--:32px;
+--body--:16px;
+
+
+}
+:root{
+    
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: var(--bg1--);
+    color: var(--main--);
+}
