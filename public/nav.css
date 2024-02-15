@@ -1,11 +1,11 @@
 
 #nav ul{
-  margin-top: -5px;
+
     display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 0 3vw;
-
+   margin-top: 10px;
 }
 #nav ul img{margin-top: 0.4vw;
     width:50px;
@@ -16,20 +16,79 @@
 }
 @media (max-width:600px) {
     #nav ul img{
-        width:45px;
-        height: 45px;
+        width:35px;
+        height: 35px ;
         object-fit:cover;
         object-position:center;
         border-radius: 50px;
+       
     }
+    #nav li{
+      font-size: 3.2vw;
+    }
+    #nav ul{
+ 
 
-    
+  right: 3vw;
+ padding-bottom: 3vh ;
+  width: 20vw;
+border-radius: 0 0px 20px 20px;
+  animation:  down 0.3s ease-in 1;
+  
+}
+@keyframes down {
+  0%{ height: 0;
+    z-index: 0;
+    background-color: white;
+
+  }
+ 
+}
 }
 
-@media (max-width:600px){
-  #nav li{
-    font-size: 3.2vw;
+@media (max-width:1200px){
+  #nav ul img{
+    width:100px !important;
+    height: 100px !important;
+    object-fit:cover;
+    object-position:center;
+    border-radius: 50px;
+}
+#nav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  z-index: 10;
+  justify-content: flex-end;
+align-content: flex-end ;
+background-color: rgb(104, 16, 16);
+color: white;
+  position: absolute;
+
+  right: 3vw;
+ padding-bottom: 3vh ;
+  width: 22vw;
+border-radius: 0 0px 20px 20px;
+  animation:  down 0.3s ease-in 1;
+  
+}
+@keyframes down {
+  0%{ height: 0;
+    z-index: 0;
+    background-color: white;
+
   }
+ 
+  100%{height: 15vh;
+
+  }
+  
+}
+#nav li{
+  font-size: 3.2vw;
+}
+
+
 }
 
 
