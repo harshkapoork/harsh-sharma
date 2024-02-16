@@ -3,12 +3,7 @@
     height:calc(100vh - 130px);
     width:100%;
 }
-@media (max-width:600px){
-    #main{
-        height:calc(100vh - 200px);
-        width:100%;
-        overflow: scroll;    }
-}
+
 /*  main structure styling */
 
 
@@ -95,14 +90,18 @@ background-repeat: no-repeat;
 /* fire animation */
 @media (max-width:600px){
 
+    #main{
+        height:calc(100vh - 200px);
+        width:100%;
+        overflow: scroll;    }
 
     #promo_tag h1{   top: 20%;
         left: 40% !important;
     }
-    
+  
 
     
-    #promo_tag h1 span{
+    .tag{
         margin-left:1vw !important ;
         letter-spacing: 1px !important;
        margin-left: 0vw;
@@ -129,7 +128,7 @@ background-repeat: no-repeat;
 
 }
 
-@media (max-width:1200px) {
+@media (max-width:900px) {
     #promo_tag{
         background-position:calc(100vw - 99vw);
 background-size: contain;

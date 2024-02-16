@@ -1,7 +1,7 @@
 <div id="nav">
     
-    
-    <ul><img src="https://cdn.vectorstock.com/i/1000x1000/64/79/arm-wrestling-mascot-logo-design-vector-43336479.webp" alt="">
+ 
+    <ul class="menu"><img src="https://cdn.vectorstock.com/i/1000x1000/64/79/arm-wrestling-mascot-logo-design-vector-43336479.webp" alt="">
         <li><a href="/home">Home</a></li>
 
 <li><a href="/plans">Plans</a></li>
@@ -10,3 +10,15 @@
 
 <li><a href="/contact">Contact</a></li>
 </ul></div>
+<script>
+    var show=document.querySelector(".show")
+    var hide=document.querySelector("#nav:nth-child(1)")
+    var menu=document.querySelector(".menu")
+    show.addEventListener("click",function(e){
+        menu.style.display="block"
+    })
+  {
+        display: none;
+    }
+   
+</script>

@@ -6,6 +6,8 @@
    align-items: center;
    padding: 0 3vw;
    margin-top: 10px;
+  
+  
 }
 #nav ul img{margin-top: 0.4vw;
     width:50px;
@@ -27,7 +29,7 @@
       font-size: 3.2vw;
     }
     #nav ul{
- 
+
 
   right: 3vw;
  padding-bottom: 3vh ;
@@ -46,7 +48,7 @@ border-radius: 0 0px 20px 20px;
 }
 }
 
-@media (max-width:1200px){
+@media (max-width:11x){
   #nav ul img{
     width:100px !important;
     height: 100px !important;
@@ -64,7 +66,7 @@ align-content: flex-end ;
 background-color: rgb(104, 16, 16);
 color: white;
   position: absolute;
-
+display: none;
   right: 3vw;
  padding-bottom: 3vh ;
   width: 22vw;

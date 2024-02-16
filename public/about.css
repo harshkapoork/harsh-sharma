@@ -39,7 +39,7 @@
     border-radius: 5px;
     border: 0;
     padding: 1vw 3vw;
-   font-size: large;
+   font-size: 1em;
     text-align: center;
     transition: all ease-in-out 0.2s;
 
@@ -47,25 +47,84 @@
 .card button:hover{
     background-color:black
 }
-#left{width: 50%;
-    height: 100%;
+#left{width: 45vw;
+    height: 100vh;
     margin:0 2vw;
     
 }
 #left img{
     width: 100%;
     height: 90%;
-    object-fit: cover;
+    object-fit: fill;
     padding: 5% 0;
     object-position: center;
-    border-radius:9%;
+ 
 }
 #right{width: 45%;
     height: 100%;
     margin:0 2vw;
-  
-
-    
 }
 
+@media (max-width:600px){
+
+    .card{height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background-color: var(--main--);
+        flex-wrap: wrap;
+        margin: 2vh 0;
+    }
+    .card {
+        color: black;
+        text-transform:capitalize;
+    }
+    
+    .card h1 span, p span{
+        color:var(--second--);
+        transition: all ease-in 0.3s;
+        font-weight: 500;
+    }
+    .card h1 span:hover{
+        color:black;
+        cursor:default;
+    }
+    .card p{
+        color:var(--third--);
+       text-transform: lowercase;
+        font-weight: 100;
+    }
+    .card button{
+        color: var(--main--);
+        background-color: var(--second--);
+        border-radius: 5px;
+        border: 0;
+        padding: 1vw 3vw;
+       font-size: 1.5em;
+        text-align: center;
+        transition: all ease-in-out 0.2s;
+    
+    }
+  
+    #left{width: 100%;
+        height: 40%;
+        margin:0 2vw;
+        
+    }
+    #left img{
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
+        padding: 5% 0;
+        object-position: center;
+        border-radius:0%;
+    }
+    #right{width: 100%;
+        height: 50%;
+        margin:0 2vw;
+    }
+
+
+}
 
